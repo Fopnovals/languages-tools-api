@@ -1,3 +1,4 @@
+var passport = require('passport');
 /**
  * Policy Mappings
  * (sails.config.policies)
@@ -17,6 +18,11 @@ module.exports.policies = {
   *                                                                          *
   ***************************************************************************/
 
-  // '*': true,
-
+  '*': "authenticated",
+    UserController: {
+        "create": true,
+    },
+    AuthController: {
+        '*': true,
+    }
 };

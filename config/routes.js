@@ -27,6 +27,12 @@ module.exports.routes = {
   '/': {
     view: 'pages/homepage'
   },
+    'GET /login': { view: 'login' },
+    'POST /login': 'AuthController.login',
+    'GET /logout': 'AuthController.logout',
+    'GET /register': { view: 'register' },
+    'POST /block': 'BlockController.create',
+    'POST /associate': 'WordsController.associate'
 
   /***************************************************************************
   *                                                                          *
