@@ -4,7 +4,10 @@
  * @description :: A model definition.  Represents a database table/collection/etc.
  * @docs        :: https://sailsjs.com/docs/concepts/models-and-orm/models
  */
-var bcrypt = require('bcrypt');
+let hash = function(values, next) {
+    AuthService.hashPassword(values);
+    next();
+};
 
 module.exports = {
     schema: true,
@@ -43,34 +46,8 @@ module.exports = {
     },
     modules: {
       model: 'Block'
-    },
-    encryptedPassword: {
-        type: 'string'
     }
   },
-  customToJSON: function() {
-      return _.omit(this, ['encryptedPassword'])
-  },
-  beforeCreate : function (values, next) {
-      bcrypt.genSalt(10, function (err, salt) {
-          if(err) return next(err);
-          bcrypt.hash(values.password, salt, function (err, hash) {
-              if(err) return next(err);
-              values.encryptedPassword = hash;
-              next();
-          })
-      })
-  },
-
-  comparePassword : function (password, user, cb) {
-      bcrypt.compare(password, user.encryptedPassword, function (err, match) {
-
-          if(err) cb(err);
-          if(match) {
-              cb(null, true);
-          } else {
-              cb(err);
-          }
-      })
-  }
+    beforeUpdate: hash,
+    beforeCreate: hash
 };

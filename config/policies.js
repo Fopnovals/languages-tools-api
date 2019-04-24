@@ -11,9 +11,8 @@ var passport = require('passport');
 
 module.exports.policies = {
 
-    '*': ['isAuthorized'], // Everything resctricted here
-    'UserController': {
-        'signup': true, // We dont need authorization here, allowing public access
-        'login': true // We dont need authorization here, allowing public access
-    }
+    '*': ['isAuthenticated'],
+    'AuthController': {
+        '*': true,
+    },
 };
