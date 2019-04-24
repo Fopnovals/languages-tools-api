@@ -15,11 +15,16 @@ module.exports = {
             type: 'string'
         },
         associations: {
-            type: 'json'
+            type: 'json',
+            columnType: 'array'
         },
         users: {
-            collection: 'user',
-            via: 'modules'
+            type: 'json',
+            columnType: 'array'
+        },
+        public: {
+            type: 'boolean',
+            defaultsTo: false
         }
     },
 

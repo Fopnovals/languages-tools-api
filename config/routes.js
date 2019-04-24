@@ -27,11 +27,12 @@ module.exports.routes = {
   '/': {
     view: 'pages/homepage'
   },
-    'GET /login': { view: 'login' },
-    'POST /login': 'AuthController.login',
+    'POST /login': 'UserController.login',
+    'POST /signup': 'UserController.signup',
     'GET /logout': 'AuthController.logout',
-    'GET /register': { view: 'register' },
     'POST /block': 'BlockController.create',
+    'GET /blocks/user': 'BlockController.getIAmUser',
+    'GET /blocks/owner': 'BlockController.getIAmOwner',
     'POST /associate': 'WordsController.associate'
 
   /***************************************************************************

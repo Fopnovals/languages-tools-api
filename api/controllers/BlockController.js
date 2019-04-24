@@ -23,7 +23,8 @@ module.exports = {
 
         const module = {
             name: req.body.name,
-            ownerId: userId
+            ownerId: userId,
+            users: [userId]
         }
 
         try {
@@ -47,6 +48,18 @@ module.exports = {
             let newBlock = await Block.create(module).fetch()
             res.send(newBlock)
         }
+    },
+    getIAmUser: async (req, res) => {
+        try {
+            let userId = req.user.id;
+            const blocks = await Block.find({users: {elemMatch: userId}});
+            console.log('====');
+            console.log(blocks);
+            res.send(blocks);
+        } catch (err) {
+            res.send({message: err})
+        }
+
     }
 
 };

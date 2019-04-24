@@ -11,18 +11,9 @@ var passport = require('passport');
 
 module.exports.policies = {
 
-  /***************************************************************************
-  *                                                                          *
-  * Default policy for all controllers and actions, unless overridden.       *
-  * (`true` allows public access)                                            *
-  *                                                                          *
-  ***************************************************************************/
-
-  '*': "authenticated",
-    UserController: {
-        "create": true,
-    },
-    AuthController: {
-        '*': true,
+    '*': ['isAuthorized'], // Everything resctricted here
+    'UserController': {
+        'signup': true, // We dont need authorization here, allowing public access
+        'login': true // We dont need authorization here, allowing public access
     }
 };

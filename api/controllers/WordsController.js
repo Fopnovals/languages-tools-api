@@ -26,19 +26,25 @@ module.exports = {
         const block = await Block.findOne({
             name: req.body.blockName,
             ownerId: userId
-        })
+        });
 
-        if(block) {
-            const result = await sails.helpers.wordsAssociation(req.body.ru, req.body.en, req.body.blockName, userId);
-
-            console.log('IDS------');
-            console.log(result);
+        if(!block) {
+            const module = {
+                name: req.body.blockName,
+                ownerId: userId,
+                users: [userId]
+            };
+            let newBlock = await Block.create(module).fetch();
+            result = await sails.helpers.wordsAssociation(req.body.ru, req.body.en, newBlock.name, userId);
+        } else {
+            result = await sails.helpers.wordsAssociation(req.body.ru, req.body.en, req.body.blockName, userId);
         }
 
-        // console.log('===');
-        // console.log(block);
-        res.send('Ok')
-        // console.log(req.body.en);
+        if(result.error) {
+            res.serverError(result.error);
+        } else {
+            res.send(result);
+        }
     }
 
 };

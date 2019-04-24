@@ -28,11 +28,16 @@ module.exports.security = {
   *                                                                          *
   ***************************************************************************/
 
-  // cors: {
-  //   allRoutes: false,
-  //   allowOrigins: '*',
-  //   allowCredentials: false,
-  // },
+  cors: {
+      allowRequestHeaders: 'Authorization, DeviceToken, content-type',
+      allRoutes: true,
+      origin: '*',
+      methods: 'PATCH,PUT,POST,GET,DELETE',
+      // allowAnyOriginWithCredentialsUnsafe: true,
+      // credentials: true,
+      exposeHeaders: ['Authorization','DeviceToken']
+
+  },
 
 
   /****************************************************************************
