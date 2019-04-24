@@ -2,30 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c61a7e23-ccd5-40b7-ad41-37b5e9191145" name="Default" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/api/models/WordsAssociations.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/policies.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/policies/sessionAuth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/services/jwtToken.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/env/development.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/env/environment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/controllers/AuthController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/controllers/BlockController.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controllers/BlockController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/controllers/UserController.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controllers/UserController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/controllers/WordsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controllers/WordsController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/helpers/words-association.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/helpers/words-association.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/models/Block.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/Block.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/models/Word.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/Word.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/policies/authenticated.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/policies/isAuthorized.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/services/passport.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/blueprints.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/blueprints.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/env/production.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/env/production.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/policies.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/policies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/security.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/security.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -62,7 +39,7 @@
           <file leaf-file-name="development.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/config/env/development.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="294">
+                <state relative-caret-position="345">
                   <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
                 </state>
               </provider>
@@ -90,11 +67,20 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="UserController.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="UserController.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/api/controllers/UserController.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="72">
+                <state relative-caret-position="129">
                   <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="204">
+                  <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
                 </state>
               </provider>
             </entry>
@@ -190,6 +176,7 @@
         <option value="$PROJECT_DIR$/config/env/environment.js" />
         <option value="$PROJECT_DIR$/config/env/development.js" />
         <option value="$PROJECT_DIR$/api/controllers/UserController.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -227,33 +214,6 @@
               <item name="languages-tools-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="languages-tools-api" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="languages-tools-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="languages-tools-api" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="languages-tools-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="languages-tools-api" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="languages-tools-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="languages-tools-api" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="languages-tools-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="languages-tools-api" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="env" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="languages-tools-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="languages-tools-api" type="462c0819:PsiDirectoryNode" />
-              <item name="tasks" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -266,6 +226,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -310,12 +275,12 @@
       <workItem from="1554817108498" duration="13872000" />
       <workItem from="1554980595485" duration="38000" />
       <workItem from="1555413013894" duration="96000" />
-      <workItem from="1556089189911" duration="4807000" />
+      <workItem from="1556089189911" duration="5019000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88206000" />
+    <option name="totallyTimeSpent" value="88418000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -353,13 +318,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/http.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="15" lean-forward="true" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/policies.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -640,15 +598,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/env/development.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
+        <state relative-caret-position="345">
           <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/controllers/UserController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
+        <state relative-caret-position="129">
           <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
         </state>
       </provider>
     </entry>
